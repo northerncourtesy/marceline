@@ -1,4 +1,4 @@
-local M = {}
+--local M = {}
 
 -- so, okay, this is how we get information from the user
 -- and it's being passed in as a table
@@ -26,4 +26,7 @@ vim.api.nvim_create_autocmd({"BufWrite", "BufModifiedSet", "CursorMoved", }, {
     end
 })
 
-return M
+return {
+    setup = setup,
+}
+--return M
